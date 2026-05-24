@@ -1,4 +1,9 @@
 
 const PI = Math.PI
-console.log(Math.PI);
-document.getElementById("pi").textContent = (`${PI}`);
+let radius;
+
+function area()
+{
+    radius = Number(document.getElementById("rad").value);
+    document.getElementById("area").textContent = (`${PI*Math.pow(Number(radius), 2)}`);
+}
