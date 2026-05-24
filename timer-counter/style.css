@@ -1,0 +1,22 @@
+#btnContainer{
+    flex-basis: auto;
+    text-align: center;
+    padding:10px;
+    grid-row: auto;
+    
+}
+#CurrentCount{
+    text-align: center;
+    font-size: 4em;
+}
+.buttons{
+    border-radius: 25px;
+    font-size: 2em;
+    padding: 10px;
+    background-color: grey;
+    margin-left: 10px;
+    transition-duration: 0.25s;
+}
+.buttons:hover{
+    background-color: rgb(90, 90, 90); 
+}
