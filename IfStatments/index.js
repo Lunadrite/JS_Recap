@@ -1,42 +1,17 @@
-const AgentName = document.getElementById("AgentName")
+// If true else false pretty simple/
 
-const valorantAgents = [
-  "Astra",
-  "Breach",
-  "Brimstone",
-  "Chamber",
-  "Clove",
-  "Cypher",
-  "Deadlock",
-  "Fade",
-  "Gekko",
-  "Harbor",
-  "Iso",
-  "Jett",
-  "KAY/O",
-  "Killjoy",
-  "Miks",
-  "Neon",
-  "Omen",
-  "Phoenix",
-  "Raze",
-  "Reyna",
-  "Sage",
-  "Skye",
-  "Sova",
-  "Tejo",
-  "Veto",
-  "Viper",
-  "Vyse",
-  "Waylay",
-  "Yoru"
-];
+const checkboxText = document.getElementById("checkboxtext")
+const checkbox = document.getElementById("mycheckbox")
+
+// document.getElementById(submit).onclick = function (){
+    checkbox.onclick = function (){
+
+    if(checkbox.checked){
+        checkboxText.textContent = "This is checked"
+    }else{
+        checkboxText.textContent = ""
+    }
 
 
-
-function RandomAgent(){
-    let randomnumber = Math.floor(Math.random() * valorantAgents.length);
-    let agent = valorantAgents[randomnumber];
-    AgentName.textContent = agent
 
 }
