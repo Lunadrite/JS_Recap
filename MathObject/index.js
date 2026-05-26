@@ -2,8 +2,8 @@
 const PI = Math.PI
 let radius;
 
-function area()
+function areaCalc()
 {
-    radius = Number(document.getElementById("rad").value);
-    document.getElementById("area").textContent = (`${PI*Math.pow(Number(radius), 2)}`);
+    radius = Number(document.getElementById("radius").value);
+    document.getElementById("area").textContent = (`${PI*Math.pow(radius, 2)}`);
 }
