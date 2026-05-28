@@ -36,7 +36,6 @@ const valorantAgents = [
 
 function RandomAgent(){
     let randomnumber = Math.floor(Math.random() * valorantAgents.length);
-    let agent = valorantAgents[randomnumber];
-    AgentName.textContent = agent
+    AgentName.textContent = valorantAgents[randomnumber];
 
 }

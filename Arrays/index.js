@@ -45,7 +45,7 @@ let letters = [...username]
 
 console.log(letters.join(''))
 
-numbers = [...numbers, "6"]
+numbers = [...numbers, 6]
 console.log(Math.max(...numbers))
 
 while(numbers.length != 20){
