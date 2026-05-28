@@ -44,3 +44,12 @@ let username = "Luna Drite";
 let letters = [...username] 
 
 console.log(letters.join(''))
+
+numbers = [...numbers, "6"]
+console.log(Math.max(...numbers))
+
+while(numbers.length != 20){
+    numbers = [...numbers, "meow"];
+}
+console.log(...numbers);
+
