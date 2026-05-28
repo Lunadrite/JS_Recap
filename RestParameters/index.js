@@ -39,4 +39,4 @@ while(running){
     }
 }
 
-console.log(sum(...usernums));
+console.log(`Total: $${sum(...usernums)}`);
