@@ -14,6 +14,8 @@ const food2 = "hamburger"
 const food3 = "sushi"
 const food4 = "hotdog"
 
+let running = true;
+
 openFridge(food1,food2,food3,food4)
 
 
@@ -24,6 +26,17 @@ function sum(...numbers){
    }
    return reuslt;
 }
+let usernums = [];
 
-const total = sum(1,2,3,5,6,7,8,5,3,3)
-console.log(total);
+while(running){
+    usernum = window.prompt("Please add the numbers you wish to add together! if you wish to stop enter `esc`");
+    if(usernum == "esc"){
+        running=false;
+        break;
+    }else{
+        usernums = [...usernums, Number(usernum)]
+
+    }
+}
+
+console.log(sum(...usernums));
