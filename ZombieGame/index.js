@@ -24,11 +24,45 @@ class Player{
     }
     draw(context){
         context.beginPath();
+        context.fillStyle = this.color;
         context.fillRect(this.xpos, this.ypos,this.scalex,this.scaley)
         context.closePath();
         
     }
-}
-let mainPlayer = new Player(0,0,100,100,"green");
+    move(y,x){
+        if ((this.xpos - x) >= 0) {
+            this.xpos += x;
+        }
 
+
+        if ((this.ypos - y) >= 0) {
+            this.ypos += y;
+        }
+
+    }
+}
+// Default player spawn:
+let mainPlayer = new Player(100,100,100,100,"green");
 mainPlayer.draw(context);
+
+
+// Player Movement Script
+document.addEventListener("keydown", function(event){
+
+    if(event.key === "a"){
+        mainPlayer.move(0, -10);
+    }
+    if(event.key === "w"){
+        mainPlayer.move(-10, 0);
+    }
+    if(event.key === "d"){
+        mainPlayer.move(0, 10);
+    }
+    if(event.key === "s"){
+        mainPlayer.move(10, 0);
+    }
+
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    mainPlayer.draw(context);
+
+});
